@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz San Valentín ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Corazones flotantes de fondo -->
+<div class="hearts-background" id="heartsBackground"></div>
+
+<!-- Contenedor principal -->
+<div class="container">
+    <!-- Sección de bienvenida -->
+    <div class="welcome-section active" id="welcomeSection">
+        <div class="heart-pulse">
+            <svg viewBox="0 0 32 29.6" class="heart-icon">
+                <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                    c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+            </svg>
+        </div>
+        <h1 class="main-title">Feliz San Valentín</h1>
+        <p class="subtitle">Tengo algo especial para ti...</p>
+        <button class="btn-primary" onclick="showMessage()">Abrir ❤️</button>
+    </div>
+
+    <!-- Sección del mensaje -->
+    <div class="message-section" id="messageSection">
+        <div class="card">
+            <h2 class="card-title">Para la persona más especial</h2>
+
+            <div class="message-content">
+                <p class="message-text" id="messageText">
+                    En este San Valentín quiero decirte lo mucho que significas para mí.
+                    Cada momento a tu lado es un regalo que atesoro en mi corazón.
+                    Gracias por ser esa luz que ilumina mis días y por hacer que cada instante sea especial.
+
+                    Te amo hoy y siempre. ❤️
+                </p>
+            </div>
+
+            <button class="btn-secondary" onclick="showPhotos()">Ver fotos juntos 📸</button>
+        </div>
+    </div>
+
+    <!-- Sección de fotos -->
+    <div class="photos-section" id="photosSection">
+        <h2 class="section-title">Nuestros momentos</h2>
+
+        <div class="photo-gallery" id="photoGallery">
+            <!-- Las fotos se cargarán dinámicamente -->
+        </div>
+
+        <div class="upload-section">
+            <label class="upload-label">
+                <input type="file" id="photoUpload" accept="image/*" multiple onchange="handlePhotoUpload(event)">
+                <span>➕ Agregar más fotos</span>
+            </label>
+        </div>
+
+        <button class="btn-primary" onclick="showFinalMessage()">Continuar ❤️</button>
+    </div>
+
+    <!-- Mensaje final -->
+    <div class="final-section" id="finalSection">
+        <div class="final-card">
+            <div class="heart-animation">
+                <div class="beating-heart">💗</div>
+            </div>
+            <h2 class="final-title">Eres mi todo</h2>
+            <p class="final-message" id="finalMessage">
+                Gracias por ser mi compañero/a, mi amor, mi mejor amigo/a.
+                Que este día sea solo el comienzo de muchos más momentos increíbles juntos.
+
+                ¡Feliz Día de San Valentín! 💕
+            </p>
+            <button class="btn-restart" onclick="restart()">Ver de nuevo ↻</button>
+        </div>
+    </div>
+</div>
+
+<!-- Partículas de confeti -->
+<canvas id="confetti"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
