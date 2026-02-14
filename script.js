@@ -10,11 +10,22 @@ const staticPhotos = [
     'image/3.GIF',  // ← Reemplaza con el nombre de tu foto 3
     'image/4.jpeg',  // ← Reemplaza con el nombre de tu foto 4
     'image/5.jpeg',  // ← Reemplaza con el nombre de tu foto 5
-    'image/6.jpeg',  // ← Reemplaza con el nombre de tu foto 6
-    // Agrega o elimina líneas según cuántas fotos quieras mostrar
-    // Ejemplo:
-    // 'images/foto7.jpg',
-    // 'images/foto8.jpg',
+    'image/6.jpeg',
+    'image/7.jpg',
+    'image/8.jpg',
+    'image/9.jpg',
+    'image/10.jpg',
+    'image/11.jpg',
+    'image/12.jpg',
+    'image/13.jpg',
+    'image/14.jpg',
+    'image/15.jpg',
+    'image/16.jpg',
+    'image/17.jpg',
+    'image/18.jpg',
+    'image/19.jpg',
+    'image/20.mp4',
+
 ];
 
 // Inicializar la aplicación
